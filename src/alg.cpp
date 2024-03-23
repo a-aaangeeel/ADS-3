@@ -12,18 +12,16 @@ int middle = 0;
         count++;
         for ( i = middle - 1; i >= 0 && arr[i] == value; --i) {
           count++;
-         }
+        }
          for ( i = middle + 1; i < size && arr[i] == value; ++i) {
          count++;
          }
          return count;
-         }
-         else if (arr[middle] < value) {
+         } else if (arr[middle] < value) {
           left_index = middle + 1;
-      }
-      else {
-        right_index = middle - 1;
-      }
+      } else {
+     right_index = middle - 1; 
+    }
  }
      return count;
- }
+}
